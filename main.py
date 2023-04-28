@@ -20,7 +20,7 @@ def uwufy_text(text, uwu_probability):
     Depending on the probability, may misspell or make other changes such as exaggerating adjectives or adding typos.
     """
     start = ''
-    with open('finalDict.json', 'r') as f:
+    with open('Dict.json', 'r') as f:
         final_dict = json.load(f)
     # PRE-SPLIT
     text = text.lower().replace("'", "")
